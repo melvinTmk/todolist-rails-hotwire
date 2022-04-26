@@ -1,0 +1,6 @@
+<%= form_with(model:task) do |form| %>
+    <div class="mb-5 flex justify-center items-center">
+        <%= form.text_field :description, placeholder: "Ajouter une nouvelle tâche", class:"inline-block shadow rounded-md p-3 w-96 " %>
+        <%= form.submit 'OK', class:"btn py-3 px-7 ml-2 bg-blue-600 text-white" %>
+    </div>
+<% end %>

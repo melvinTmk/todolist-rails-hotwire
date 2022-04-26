@@ -1,0 +1,8 @@
+<%= turbo_frame_tag "#{dom_id @task}" do %>
+  <div class="block border-2 p-4 rounded-md shadow-md mb-3">
+  <h1 class="mb-3">Modifier la tâche</h1>
+        <div class="" id="<%= dom_id @task %>">
+          <%= render "form", task: @task %>
+        </div>
+  </div>
+<% end %>
