@@ -1,3 +1,3 @@
 class Task < ApplicationRecord
-    validates :description, presence: true
+    validates_presence_of :description
 end

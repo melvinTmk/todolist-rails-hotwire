@@ -66,6 +66,8 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    acts_as_list (1.0.4)
+      activerecord (>= 4.2)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     bindex (0.8.1)
@@ -73,6 +75,9 @@ GEM
       msgpack (~> 1.2)
     builder (3.2.4)
     byebug (11.1.3)
+    cable_ready (4.5.0)
+      rails (>= 5.2)
+      thread-local (>= 1.1.0)
     capybara (3.36.0)
       addressable
       matrix
@@ -200,10 +205,17 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
+    stimulus_reflex (3.4.1)
+      cable_ready (>= 4.5)
+      nokogiri
+      rack
+      rails (>= 5.2)
+      redis
     strscan (3.0.1)
     tailwindcss-rails (2.0.8-x86_64-linux)
       railties (>= 6.0.0)
     thor (1.2.1)
+    thread-local (1.1.0)
     tilt (2.0.10)
     timeout (0.2.0)
     turbo-rails (1.0.1)
@@ -239,6 +251,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  acts_as_list (~> 1.0)
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
@@ -254,6 +267,7 @@ DEPENDENCIES
   selenium-webdriver (>= 4.0.0.rc1)
   spring
   stimulus-rails
+  stimulus_reflex (~> 3.4)
   tailwindcss-rails (~> 2.0)
   turbo-rails
   turbolinks (~> 5)

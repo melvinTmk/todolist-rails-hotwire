@@ -12,7 +12,7 @@ class TasksController < ApplicationController
             if @task.save 
                 format.html {redirect_to '', notice: 'Votre tâche a été ajoutée avec succès'}
             else
-                format.html {render :new, status: :unprocessable_entity}
+                format.html {redirect_to '', notice:'Le champ ne doit pas être vide'}
             end
         end
     end

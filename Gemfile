@@ -64,3 +64,7 @@ gem "tailwindcss-rails", "~> 2.0"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
+
+gem "acts_as_list", "~> 1.0"
+
+gem "stimulus_reflex", "~> 3.4"
